@@ -8,6 +8,15 @@ Inspired by GraphQL it's recalled to make queries in a declarative way
 Usage example:
 
 ```php
+use Amorphine\BitrixRestQl\DataLoader;
+use Amorphine\BitrixRestQl\Query\BitrixQueryExecutor;
+use Amorphine\BitrixRestQl\Schema\Types\Contact;
+use Amorphine\BitrixRestQl\Schema\Types\Deal;
+use Amorphine\BitrixRestQl\Schema\Types\ListType;
+use Amorphine\BitrixRestQl\Schema\Types\MethodList;
+
+require('vendor/autoload.php');
+
 $schema = [
     'contacts' => [
         'type' => ListType::forType(
