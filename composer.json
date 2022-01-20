@@ -1,0 +1,20 @@
+{
+    "name": "amorphine/bitrix-ql",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Amorphine\\BitrixRestQl\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pavel Fedin",
+            "email": "fe-pavel@yandex.ru"
+        }
+    ],
+    "require": {
+      "ext-curl": "*",
+        "ext-json": "*"
+    }
+}
